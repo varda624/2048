@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        CurrentGameScore = 0;
+        IsGameOver = false;
         CheckDicesOnScene();
     }
 
